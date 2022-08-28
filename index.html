@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sanitize.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="img/tic-tac-toe.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sanitize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="img/tic-tac-toe.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="main.js" defer></script>
     <title>Tic-Tac-Toe</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <span class="header-one">Tic</span><span class="header-two">Tac</span
+        ><span class="header-three">Toe</span>
+      </h1>
+    </header>
+
+    <main class="wrapper">
+      <div class="start-game-modal">
+        <form action="#" class="start-game-form" id="start-game-form">
+          <h2 class="start-game-title">Enter your name</h2>
+          <label for="player-one">Player One</label>
+          <input
+            type="text"
+            name="player-one"
+            class="start-game-input"
+            id="player-one"
+            required
+            maxlength="8"
+            value="Banjo"
+          />
+          <label for="player-two">Player Two</label>
+          <input
+            type="text"
+            name="player-two"
+            class="start-game-input"
+            id="player-two"
+            required
+            maxlength="8"
+            value="Kazooie"
+          />
+          <button type="submit" class="start-game-button">Start Game</button>
+        </form>
+      </div>
+      <div class="gameboard">
+        <div class="gameboard-tile" data-index="0"></div>
+        <div class="gameboard-tile" data-index="1"></div>
+        <div class="gameboard-tile" data-index="3"></div>
+        <div class="gameboard-tile" data-index="4"></div>
+        <div class="gameboard-tile" data-index="5"></div>
+        <div class="gameboard-tile" data-index="6"></div>
+        <div class="gameboard-tile" data-index="7"></div>
+        <div class="gameboard-tile" data-index="8"></div>
+        <div class="gameboard-tile" data-index="9"></div>
+      </div>
+      <div class="end-game-modal">
+        <h2 class="end-game-result"></h2>
+        <button type="button" class="new-round-button" id="new-round-button">
+          New Round
+        </button>
+        <button type="button" class="new-game-button">Reset Game</button>
+      </div>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,31 @@
+:root {
+    --color-highlight: #10b981;
+    --color-dark: #171717;
+    --color-grey: #525252;
+    --color-light: #fafafa;
+    --ff-main: 'Roboto', sans-serif; /* 400/700 */
+}
+
+body {
+    font-family: var(--ff-main);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: min-content;
+    font-size: xx-large;
+}
+
+.header-one {
+    color: var(--color-highlight);
+}
+
+.header-two {
+    color: var(--color-grey);
+}
+
+.header-three {
+    color: var(--color-dark);
+}
