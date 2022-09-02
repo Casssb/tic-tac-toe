@@ -22,4 +22,15 @@ const gameController = (() => {
   return { gameboard, winConditions, clearArray};
 })();
 
-const interface = (() => {})();
+const interface = (() => {
+  const startGameModal = document.querySelector('#start-game-modal');
+  const startGameForm = document.querySelector('#start-game-form');
+  const gameboard = document.querySelector('#gameboard');
+  const playerOneInput = document.querySelector('#player-one').value;
+  const playerTwoInput = document.querySelector('#player-two').value;
+
+  startGameForm.addEventListener('submit', () => {
+    startGameModal.style.display = 'none';
+    gameboard.style.display = 'grid';
+  })
+})();

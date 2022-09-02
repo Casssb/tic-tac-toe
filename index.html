@@ -25,33 +25,39 @@
     </header>
 
     <main class="wrapper">
-      <div class="start-game-modal">
+      <div class="start-game-modal" id="start-game-modal">
         <form action="#" class="start-game-form" id="start-game-form">
           <h2 class="start-game-title">Enter your name</h2>
-          <label for="player-one">Player One</label>
-          <input
-            type="text"
-            name="player-one"
-            class="start-game-input"
-            id="player-one"
-            required
-            maxlength="8"
-            value="Banjo"
-          />
-          <label for="player-two">Player Two</label>
-          <input
-            type="text"
-            name="player-two"
-            class="start-game-input"
-            id="player-two"
-            required
-            maxlength="8"
-            value="Kazooie"
-          />
+          <div class="start-game-players">
+            <div class="player-wrapper">
+              <label for="player-one">Player One</label>
+              <input
+                type="text"
+                name="player-one"
+                class="start-game-input"
+                id="player-one"
+                required
+                maxlength="8"
+                value="Banjo"
+              />
+            </div>
+            <div class="player-wrapper">
+              <label for="player-two">Player Two</label>
+              <input
+                type="text"
+                name="player-two"
+                class="start-game-input"
+                id="player-two"
+                required
+                maxlength="8"
+                value="Kazooie"
+              />
+            </div>
+          </div>
           <button type="submit" class="start-game-button">Start Game</button>
         </form>
       </div>
-      <div class="gameboard">
+      <div class="gameboard" id="gameboard">
         <div class="gameboard-tile" data-index="0"></div>
         <div class="gameboard-tile" data-index="1"></div>
         <div class="gameboard-tile" data-index="3"></div>
