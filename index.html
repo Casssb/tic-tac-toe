@@ -37,7 +37,7 @@
                 class="start-game-input"
                 id="player-one"
                 required
-                maxlength="8"
+                maxlength="15"
                 value="Banjo"
               />
             </div>
@@ -49,7 +49,7 @@
                 class="start-game-input"
                 id="player-two"
                 required
-                maxlength="8"
+                maxlength="15"
                 value="Kazooie"
               />
             </div>
@@ -71,12 +71,20 @@
           <div class="gameboard-tile" id="gameboard-tile" data-index="8"></div>
         </div>
       </div>
-      <div class="end-game-modal">
-        <h2 class="end-game-result"></h2>
-        <button type="button" class="new-round-button" id="new-round-button">
-          New Round
-        </button>
-        <button type="button" class="new-game-button">Reset Game</button>
+      <div class="end-game-modal" id="end-game-modal">
+        <h2 class="end-game-result" id="end-game-result"></h2>
+        <div class="end-game-buttons">
+          <button type="button" class="new-round-button" id="new-round-button">
+            New Round
+          </button>
+          <button
+            type="button"
+            class="reset-game-button"
+            id="reset-game-button"
+          >
+            Reset Game
+          </button>
+        </div>
       </div>
     </main>
   </body>

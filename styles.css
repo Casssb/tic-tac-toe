@@ -114,5 +114,25 @@ header {
 }
 
 .end-game-modal {
+    background-color: var(--color-grey);
+    border-radius: 1rem;
+    padding: 1rem;
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.end-game-result {
+    color: var(--color-dark);
+    font-size: xx-large;
+    font-weight: 700;
+    text-shadow: 1px 0.5px var(--color-light)
+}
+
+.end-game-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
