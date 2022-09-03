@@ -92,11 +92,18 @@ header {
 /* gameboard */
 
 .gameboard {
-    display: none;
+    display: grid;
     grid-template-columns: repeat(3, 150px);
     grid-template-rows: repeat(3, 150px);
     background-color: var(--color-grey);
     box-shadow: var(--box-shadow);
+}
+
+.gameboard-wrapper {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .gameboard-tile {
