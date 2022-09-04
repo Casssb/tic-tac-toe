@@ -112,6 +112,11 @@ header {
   box-shadow: var(--box-shadow);
 }
 
+.gameboard-turn {
+  color: var(--color-dark);
+  text-shadow: 0.5px 0.1px var(--color-grey);
+}
+
 .gameboard-wrapper {
   display: none;
   flex-direction: column;
