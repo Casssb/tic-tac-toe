@@ -2,7 +2,7 @@
 
 A tic-tac-toe game. Built with the module design pattern using HTML, CSS & JS.
 
-[Demo here](https://github.com/Casssb/tic-tac-toe)
+[Demo here](https://casssb.github.io/tic-tac-toe/)
 
 ![Image of live version](./img/tictactoe.PNG)
 
