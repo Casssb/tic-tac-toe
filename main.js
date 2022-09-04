@@ -146,11 +146,11 @@ const interface = (() => {
   };
 
   startGameForm.addEventListener('submit', () => {
+    startGameModal.style.display = 'none';
+    gameboardWrapper.style.display = 'flex';
     updateName(playerOneInput.value, playerTwoInput.value);
     displayTurn(playerOne, playerTwo);
     startGameForm.reset();
-    startGameModal.style.display = 'none';
-    gameboardWrapper.style.display = 'flex';
   });
 
   gameboardTile.forEach((tile) => {

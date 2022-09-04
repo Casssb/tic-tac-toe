@@ -48,8 +48,10 @@ header {
     color: var(--color-dark);
     background-color: var(--color-grey);
     border-radius: 1rem;
-    padding: 1rem;
-    box-shadow: var(--box-shadow)
+    padding: 0.5rem;
+    box-shadow: var(--box-shadow);
+    border: 2px solid var(--color-dark);
+    margin-top: 5rem;
 }
 
 .start-game-form {
@@ -57,7 +59,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .start-game-players {
@@ -72,6 +74,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.player-wrapper input {
+    border: none;
+    border-radius: 4px;
+    color: var(--color-dark);
+    background-color: var(--color-light);
 }
 
 .start-game-button {
@@ -117,17 +126,19 @@ header {
     background-color: var(--color-grey);
     border-radius: 1rem;
     padding: 1rem;
+    border: 2px solid var(--color-dark);
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 10rem;
 }
 
 .end-game-result {
     color: var(--color-dark);
     font-size: xx-large;
     font-weight: 700;
-    text-shadow: 1px 0.5px var(--color-light)
+    text-shadow: 1px 0.5px var(--color-light);
 }
 
 .end-game-buttons {
@@ -135,4 +146,22 @@ header {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+}
+
+.new-round-button, .reset-game-button {
+    font-size: medium;
+    background-color: var(--color-highlight);
+    color: var(--color-light);
+    border: 1px solid var(--color-light);
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+.reset-game-button {
+
+}
+
+.new-round-button:hover, .reset-game-button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
