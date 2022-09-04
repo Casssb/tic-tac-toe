@@ -58,7 +58,6 @@ const gameController = (() => {
 
   return {
     gameboard,
-    winConditions,
     clearGameboard,
     updateGameboard,
     checkResult,
@@ -146,7 +145,8 @@ const interface = (() => {
     });
   };
 
-  startGameForm.addEventListener('submit', () => {
+  startGameForm.addEventListener('submit', (e) => {
+    e.stopPropagation()
     startGameModal.style.display = 'none';
     gameboardWrapper.style.display = 'flex';
     updateName(playerOneInput.value, playerTwoInput.value);
