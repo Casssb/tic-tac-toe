@@ -162,11 +162,17 @@ header {
     padding: 0.3rem;
 }
 
-.reset-game-button {
-
-}
-
 .new-round-button:hover, .reset-game-button:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+@media only screen and (max-width: 500px) {
+    .start-game-players {
+        flex-direction: column;
+    };
+    .gameboard {
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+    }
 }
