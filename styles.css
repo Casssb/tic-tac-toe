@@ -1,178 +1,180 @@
 :root {
-    --color-highlight: #10b981;
-    --color-dark: #171717;
-    --color-grey: #525252;
-    --color-light: #fafafa;
-    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    --ff-main: 'Roboto', sans-serif; /* 400/700 */
+  --color-highlight: #10b981;
+  --color-dark: #171717;
+  --color-grey: #525252;
+  --color-light: #fafafa;
+  --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --ff-main: 'Roboto', sans-serif; /* 400/700 */
 }
 
 body {
-    font-family: var(--ff-main);
+  font-family: var(--ff-main);
 }
 
 /* header ection */
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: min-content;
-    font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+  font-size: xx-large;
 }
 
 .header-one {
-    color: var(--color-highlight);
+  color: var(--color-highlight);
 }
 
 .header-two {
-    color: var(--color-grey);
+  color: var(--color-grey);
 }
 
 .header-three {
-    color: var(--color-dark);
+  color: var(--color-dark);
 }
 
 /* wrapper for main content */
 
 .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .start-game-modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-dark);
-    background-color: var(--color-grey);
-    border-radius: 1rem;
-    padding: 0.5rem;
-    box-shadow: var(--box-shadow);
-    border: 2px solid var(--color-dark);
-    margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-dark);
+  background-color: var(--color-grey);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  box-shadow: var(--box-shadow);
+  border: 2px solid var(--color-dark);
+  margin-top: 5rem;
 }
 
 .start-game-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--color-light);
 }
 
 .start-game-title {
-    text-shadow: 1px 0.5px var(--color-dark);
+  text-shadow: 1px 0.5px var(--color-dark);
 }
 
 .start-game-players {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .player-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .player-wrapper input {
-    border: none;
-    border-radius: 4px;
-    color: var(--color-dark);
-    background-color: var(--color-light);
+  border: none;
+  border-radius: 4px;
+  color: var(--color-dark);
+  background-color: var(--color-light);
 }
 
 .start-game-button {
-    font-size: large;
-    background-color: var(--color-highlight);
-    color: var(--color-light);
-    border: 1px solid var(--color-light);
-    border-radius: 5px;
-    padding: 0.5rem;
+  font-size: large;
+  background-color: var(--color-highlight);
+  color: var(--color-light);
+  border: 1px solid var(--color-light);
+  border-radius: 5px;
+  padding: 0.5rem;
 }
 
 .start-game-button:hover {
-    cursor: pointer;
-    transform: scale(1.05);
+  cursor: pointer;
+  transform: scale(1.05);
 }
-
 
 /* gameboard */
 
 .gameboard {
-    display: grid;
-    grid-template-columns: repeat(3, 150px);
-    grid-template-rows: repeat(3, 150px);
-    background-color: var(--color-grey);
-    box-shadow: var(--box-shadow);
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  background-color: var(--color-grey);
+  box-shadow: var(--box-shadow);
 }
 
 .gameboard-wrapper {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .gameboard-tile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 2px var(--color-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px var(--color-light);
 }
 
 .end-game-modal {
-    background-color: var(--color-grey);
-    border-radius: 1rem;
-    padding: 1rem;
-    border: 2px solid var(--color-dark);
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10rem;
+  background-color: var(--color-grey);
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 2px solid var(--color-dark);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
 }
 
 .end-game-result {
-    color: var(--color-dark);
-    font-size: xx-large;
-    font-weight: 700;
-    text-shadow: 1px 0.5px var(--color-light);
+  color: var(--color-dark);
+  font-size: xx-large;
+  font-weight: 700;
+  text-shadow: 1px 0.5px var(--color-light);
 }
 
 .end-game-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.new-round-button, .reset-game-button {
-    font-size: medium;
-    background-color: var(--color-highlight);
-    color: var(--color-light);
-    border: 1px solid var(--color-light);
-    border-radius: 5px;
-    padding: 0.3rem;
+.new-round-button,
+.reset-game-button {
+  font-size: medium;
+  background-color: var(--color-highlight);
+  color: var(--color-light);
+  border: 1px solid var(--color-light);
+  border-radius: 5px;
+  padding: 0.3rem;
 }
 
-.new-round-button:hover, .reset-game-button:hover {
-    cursor: pointer;
-    transform: scale(1.05);
+.new-round-button:hover,
+.reset-game-button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 500px) {
-    .start-game-players {
-        flex-direction: column;
-    };
-    .gameboard {
-        grid-template-columns: repeat(3, 100px);
-        grid-template-rows: repeat(3, 100px);
-    }
+  .start-game-players {
+    flex-direction: column;
+  }
+
+  .gameboard {
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+  }
 }
