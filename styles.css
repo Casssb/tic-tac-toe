@@ -60,6 +60,11 @@ header {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    color: var(--color-light);
+}
+
+.start-game-title {
+    text-shadow: 1px 0.5px var(--color-dark);
 }
 
 .start-game-players {

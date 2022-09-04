@@ -85,6 +85,7 @@ const interface = (() => {
   const updateName = (first, second) => {
     playerOne.name = first;
     playerTwo.name = second;
+    startGameForm.reset();
   };
 
   const changeTurn = () => {
@@ -150,7 +151,6 @@ const interface = (() => {
     gameboardWrapper.style.display = 'flex';
     updateName(playerOneInput.value, playerTwoInput.value);
     displayTurn(playerOne, playerTwo);
-    startGameForm.reset();
   });
 
   gameboardTile.forEach((tile) => {
@@ -176,7 +176,8 @@ const interface = (() => {
     gameController.clearGameboard();
     startGameModal.style.display = 'flex';
     endGameModal.style.display = 'none';
-    playerOne.round = true;
-    playerTwo.round = false;
+    playerOne.turn = true;
+    playerTwo.turn = false;
+    displayTurn(playerOne, playerTwo);
   })
 })();
