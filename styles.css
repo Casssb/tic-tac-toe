@@ -131,6 +131,11 @@ header {
   border: solid 2px var(--color-light);
 }
 
+.gameboard-tile:hover {
+  background-color: rgba(52, 52, 52, 0.8);
+  cursor: pointer;
+}
+
 .end-game-modal {
   background-color: var(--color-grey);
   border-radius: 1rem;
